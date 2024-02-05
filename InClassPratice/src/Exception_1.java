@@ -1,4 +1,4 @@
-public class Exception{
+public class Exception_1{
     public static void main(String[] args){
         int x=6, y=0;
         try {
