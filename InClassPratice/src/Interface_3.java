@@ -16,12 +16,15 @@ interface KoreaRemote extends VNRemote{
 }
 
 public class Interface_3 implements KoreaRemote{
+    @Override
     public void subtitle(String language){
         System.out.println("display "+language);
     }
+    @Override
     public void onDevice(){
         System.out.println("on AC");
     }
+    @Override
     public void offDevice(){
         System.out.println("off AC");
     }

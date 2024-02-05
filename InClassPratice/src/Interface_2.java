@@ -20,12 +20,15 @@ interface ChinaRemote{
 }
 
 public class Interface_2 implements VNRemote, ChinaRemote{
+    @Override
     public void onDevice(){
         System.out.println("on TV");
     }
+    @Override
     public void offDevice(){
         System.out.println("off TV");
     }
+    @Override
     public void increaseVolumn(){
         System.out.println("increase volumn");
     }
