@@ -27,8 +27,8 @@ public class Painting extends Item {
 
     public void outputPainting() {
         super.output();
-        System.out.print(" " + height + " " + width + " " + isWatercolour + " " + isFramed);
-//        System.out.println("Width: " + width);
+        System.out.println(" " + height + " " + width + " " + isWatercolour + " " + isFramed);
+//        System.out.println();
 //        System.out.println("Watercolour: " + isWatercolour);
 //        System.out.println("Framed: " + isFramed);
     }

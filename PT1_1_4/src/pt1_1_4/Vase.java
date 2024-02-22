@@ -21,8 +21,8 @@ public class Vase extends Item{
     
     public void outputVase(){
         super.output();
-        System.out.print(" " + height + " "+ material);
-//        System.out.println(material);
+        System.out.println(" " + height + " "+ material);
+//        System.out.println();
     }
     
     public void inputVase(){

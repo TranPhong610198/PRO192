@@ -4,7 +4,7 @@ public class Item {
 //    Scanner scan = new Scanner(System.in);
     Scanner scan;
     private int value;
-    private String creator;
+    String creator;
     
     public Item(Scanner scan){this.scan = scan;};
     public Item(int value, String creator, Scanner scan){
@@ -23,7 +23,7 @@ public class Item {
     
     public void output(){
         System.out.print(value + " " + creator);
-//        System.out.println(creator);
+//        System.out.println();
     }
     
     public void input(){
