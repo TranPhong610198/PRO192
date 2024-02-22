@@ -1,14 +1,14 @@
 package pt1_1_4;
-
+import java.util.*;
 public class Painting extends Item {
     private int height;
     private int width;
     private boolean isWatercolour;
     private boolean isFramed;
 
-    public Painting(){}
-    public Painting(int value, String creator, int height, int width, boolean isWatercolour, boolean isFramed) {
-        super(value, creator);
+    public Painting(Scanner scan){super(scan);}
+    public Painting(int value, String creator, int height, int width, boolean isWatercolour, boolean isFramed, Scanner scan) {
+        super(value, creator, scan);
         this.height = height;
         this.width = width;
         this.isWatercolour = isWatercolour;
@@ -27,10 +27,10 @@ public class Painting extends Item {
 
     public void outputPainting() {
         super.output();
-        System.out.println("Height: " + height);
-        System.out.println("Width: " + width);
-        System.out.println("Watercolour: " + isWatercolour);
-        System.out.println("Framed: " + isFramed);
+        System.out.print(" " + height + " " + width + " " + isWatercolour + " " + isFramed);
+//        System.out.println("Width: " + width);
+//        System.out.println("Watercolour: " + isWatercolour);
+//        System.out.println("Framed: " + isFramed);
     }
 
     public void inputPainting() {

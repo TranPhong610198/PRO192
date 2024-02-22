@@ -1,12 +1,12 @@
 package pt1_1_4;
-
+import java.util.*;
 public class Vase extends Item{
     private int height;
     private String material;
     
-    public Vase(){}
-    public Vase(int value, String creator, int height, String material){
-        super(value, creator);
+    public Vase(Scanner scan){super(scan);}
+    public Vase(int value, String creator, int height, String material, Scanner scan){
+        super(value, creator, scan);
         this.height = height;
         this.material = material;
     }
@@ -21,8 +21,8 @@ public class Vase extends Item{
     
     public void outputVase(){
         super.output();
-        System.out.println(height);
-        System.out.println(material);
+        System.out.print(" " + height + " "+ material);
+//        System.out.println(material);
     }
     
     public void inputVase(){

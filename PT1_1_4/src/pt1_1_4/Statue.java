@@ -1,12 +1,12 @@
 package pt1_1_4;
-
+import java.util.*;
 public class Statue extends Item {
     private int weight;
     private String colour;
 
-    public Statue() {}
-    public Statue(int value, String creator, int weight, String colour) {
-        super(value, creator);
+    public Statue(Scanner scan) {super(scan);}
+    public Statue(int value, String creator, int weight, String colour, Scanner scan) {
+        super(value, creator, scan);
         this.weight = weight;
         this.colour = colour;
     }
@@ -19,8 +19,8 @@ public class Statue extends Item {
 
     public void outputStatue() {
         super.output();
-        System.out.println("Weight: " + weight);
-        System.out.println("Colour: " + colour);
+        System.out.println(" " + weight + " " + colour);
+//        System.out.println(" " + colour);
     }
 
     public void inputStatue() {
