@@ -1,5 +1,4 @@
  
-import java.util.*;
 
 public class MyString implements IString { 
 
@@ -27,7 +26,7 @@ public class MyString implements IString {
 //==============================================================================    
     public String f2(String st) {
       String [] a = st.split("[ ]+");
-      int n,i,k,r,p,len; n= a.length;
+      int n,i; n= a.length;
       String s="";
       for(i=n-1;i>=0;i--) {
         s += " " + a[i]; 
