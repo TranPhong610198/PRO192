@@ -1,11 +1,10 @@
 import java.util.Scanner;
 
 public class ExceptionAPP_1{
-    public static int ExceptionAPP_1(){
-        
-        Scanner in = new Scanner(System.in);
+    public ExceptionAPP_1(){
+    } 
+    public int inputObj(Scanner in){   
         int n;
-        
         try {
             System.out.printf("Enter a whole number: ");
             n = Integer.parseInt(in.nextLine());
@@ -18,7 +17,8 @@ public class ExceptionAPP_1{
     }
     
     public static void main(String[] args){
-       int n= ExceptionAPP_1();
-       System.out.printf("number:  " + n);
+        Scanner in = new Scanner(System.in);
+        ExceptionAPP_1 obj = new ExceptionAPP_1();
+        System.out.printf("number:  " + obj.inputObj(in));
    }
 }

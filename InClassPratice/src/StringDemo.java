@@ -23,5 +23,6 @@ public class StringDemo{
         
         int index= Integer.parseInt(scan.nextLine());
         System.out.format("The %d(th)character:%c\n", index, origin.charAt(index));
+        scan.close();
     }
 }

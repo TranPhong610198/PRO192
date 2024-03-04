@@ -5,7 +5,9 @@ public class ExceptionAPP_3{
         System.out.print("Enter a whole number: ");
         int n = Integer.parseInt(in.nextLine());
         if( n<10 || n>50) throw new Exception();
+        in.close();
         return n;
+
     }
 
     public static void main(String[] args){
