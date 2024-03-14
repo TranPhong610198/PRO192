@@ -1,21 +1,24 @@
-import java.util.*;
-class Person{
-    String name; int age;
-    Person(String n, int a){
-        name =n;
-        age =a;
-    }
-    public void print(){
-        System.out.println(name +", "+age);
+
+import java.lang.*;
+
+class A {
+
+    int x, y;
+
+    void display() {
+        System.out.print(x + " " + y);
     }
 }
-public class Main{
-    public static void main (String[] args){
-        Vector v = new Vector();
-        v.add (new Person ("Hoa", 23));
-        v.add (new Person ("Tuấn", 27));
-        for (int i=v.size()-1; i>=0; i--){
-             v.get(i).print();
-        }
+
+public class temp {
+
+    public static void main(String args[]) {
+        A obj1 = new A();
+        A obj2 = new A();
+        obj1.x = 1;
+        obj1.y = 2;
+        obj2 = (A) obj1.clone();
+        obj1.display();
+        obj2.display();
     }
 }
